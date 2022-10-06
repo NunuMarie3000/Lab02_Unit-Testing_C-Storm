@@ -10,4 +10,6 @@
 
 3. To use this application, simple run the program on your local machine. Be aware that your account balance at the start of the program is always $0, so you must make a deposit before you can withdraw!
 
-4. Relevant details: This is my first time working with unit testing in c#, I only recently began using the language a couple days ago, so it's a little rough around the edges, but it was fun to figure out!
+4. Relevant details: This is my first time working with unit testing in c#, I only recently began using the language a couple days ago, so it's a little rough around the edges, but it was fun to figure out! 
+
+5. Technologies used: C#, .NET, Xunit
