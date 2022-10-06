@@ -61,6 +61,7 @@ namespace MockATM
 
     public static decimal ViewBalance()
     {
+      decimal Balance = 25.5m;
       // returns the value of the current balance
       // returns a decimal
       // needs to be tested to ensure the balance properly shows the correct amount after each transaction
@@ -69,6 +70,7 @@ namespace MockATM
 
     public static decimal Withdraw(decimal withdrawAmount)
     {
+      decimal Balance = 25.5m;
       // probably needs to take in a value the user wants to withdraw
       // returns decimal
       // do not allow the user to withdraw a value less than 0
@@ -84,6 +86,7 @@ namespace MockATM
 
     public static decimal Deposit(decimal depositAmount)
     {
+      decimal Balance = 25.5m;
       // return decimal
       // adds money to the balance
       if (depositAmount >= 0)

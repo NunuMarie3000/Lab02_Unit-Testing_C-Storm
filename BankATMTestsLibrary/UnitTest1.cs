@@ -15,11 +15,10 @@ public class UnitTest1
         Assert.Equal(expected, actual);
     }
 
-    // [Fact]
     [Theory]
-    // [InlineData(3.50, 22.0)] // this fails
+    [InlineData(3.50, 22.0)] 
     [InlineData(7, 18.5)]
-    // [InlineData(25, .5)] // this fails
+    [InlineData(25, .5)] 
     [InlineData(27, 25.5)]
     public void Withdraw_ShouldReturnBalanceAfterWithdraw(decimal withdrawAmount, decimal expected)
     {
@@ -29,9 +28,9 @@ public class UnitTest1
     }
 
     [Theory]
-    [InlineData(5, 30.5)] // failed
-    [InlineData(5.25, 30.75)] // failed
-    [InlineData(0, 25.5)] // failed
+    [InlineData(5, 30.5)] 
+    [InlineData(5.25, 30.75)] 
+    [InlineData(0, 25.5)]
     public void Deposit_ShouldReturnBalanceAfterDeposit(decimal depositAmount, decimal expected)
     {
         decimal actual = MockATM.Program.Deposit(depositAmount);
